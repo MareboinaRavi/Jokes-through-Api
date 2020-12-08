@@ -8,21 +8,7 @@
   <title>Chuck Norris Joke Generator</title>
 </head>
 <body>
-  <div class="container">
-    <h2>Chuck Norris Joke Generator</h2>
-    <form>
-      <div>
-        <label for="number">Number of jokes</label>
-        <input type="number" id="number">
-      </div>
-      <div>
-        <button class="get-jokes">Get Jokes</button>
-      </div>
-    </form>
-    <ul class="jokes"></ul>
-  </div>
-
-  <script>document.querySelector('.get-jokes').addEventListener('click', getJokes);
+   <script>document.querySelector('.get-jokes').addEventListener('click', getJokes);
 
 function getJokes(e) {
   const number = document.querySelector('input[type="number"]').value;
@@ -53,5 +39,18 @@ function getJokes(e) {
 
   e.preventDefault();
 }</script>
+  <div class="container">
+    <h2>Chuck Norris Joke Generator</h2>
+    <form>
+      <div>
+        <label for="number">Number of jokes</label>
+        <input type="number" id="number">
+      </div>
+      <div>
+        <button class="get-jokes">Get Jokes</button>
+      </div>
+    </form>
+    <ul class="jokes"></ul>
+  </div>
 </body>
 </html>
